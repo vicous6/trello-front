@@ -52,7 +52,7 @@ function EditWorkspace({ setPopUpEditWorkspace, id, text }) {
       };
 
       const response = await fetch(
-        "http://localhost:3000/delete-workspace",
+        "https://trello-brack.onrender.com/delete-workspace",
         requestOptions
       );
 
