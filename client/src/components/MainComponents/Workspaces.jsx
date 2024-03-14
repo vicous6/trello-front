@@ -40,7 +40,7 @@ function MainWorkspaces({ setBoards, setCurrentWorkspaceId }) {
           requestOptions
         );
         const data = await response.json();
-        console.log(data);
+        console.log(data[1]);
         setWorkspaces(data);
         setCurrentWorkspaceId(data[1].id);
         console.log("11111");
