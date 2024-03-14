@@ -44,7 +44,7 @@ function MainWorkspaces({ setBoards, setCurrentWorkspaceId }) {
         setWorkspaces(data);
         setCurrentWorkspaceId(data[1].id);
         console.log("11111");
-        console.log(document.getElementById("workspacesList"));
+        console.log(document.getElementById("workspacesList").children);
         fetchBoards(document.getElementById("workspacesList").children[1].id);
         console.log("22222");
 
