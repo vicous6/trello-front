@@ -32,7 +32,7 @@ function MainWorkspaces({ setBoards, setCurrentWorkspaceId }) {
           },
           body: JSON.stringify({
             token: localStorage.getItem("token"),
-            id: localStorage.getItem("board_id"),
+            // id: id,
           }),
         };
 
