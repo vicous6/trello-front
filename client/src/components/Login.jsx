@@ -5,7 +5,7 @@ import { redirect } from "react-router-dom";
 
 function Login() {
   const trelloAuth = new TrelloOAuth(
-    "http://trello-front-ry4y.vercel.app:5173/main"
+    "http://trello-front-ry4y.vercel.app/main"
   );
 
   const loginWithTrello = () => {
