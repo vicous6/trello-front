@@ -1,0 +1,19 @@
+// sass --watch .\src\assets\style\scss\style.scss:.\src\assets\style.css
+@import "reset";
+@import "login";
+@import "./main/mainBoards";
+@import "./main/mainNav";
+@import "./main/mainWorkspaces";
+@import "./board/list";
+@import "boardPage";
+@import "./board/options";
+@import "app";
+@import "board/card";
+@import "./popUps/main/createBoard";
+@import "./popUps/main/createWorkspace";
+@import "./popUps/main/editWorkspace";
+@import "./popUps/board/editBoard";
+@import "./popUps/board/deleteBoard";
+@import "./board/newCard";
+@import "./board/newList";
+@import "./popUps/board/deleteList";

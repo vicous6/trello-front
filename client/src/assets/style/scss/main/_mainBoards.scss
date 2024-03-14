@@ -1,0 +1,42 @@
+#MainBaords {
+  // background-color: red;
+  height: 47vh;
+  display: grid;
+  width: 95vw;
+  margin: 0 auto;
+  & > ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+    height: 80%;
+    // background-color: grey;
+    & > li {
+      justify-self: center;
+      align-self: center;
+      width: 80%;
+      height: 60%;
+      max-height: 10vh;
+      border-radius: 10px;
+      text-align: center;
+      background-color: #40ad89;
+      display: grid;
+      transition: size 1s, transform 1s;
+    }
+
+    & > li > p {
+      align-self: center;
+      justify-self: center;
+      transition: size 1s, transform 1s;
+    }
+
+    & > li:hover {
+      transform: scale(1.2) rotate(4deg);
+    }
+
+    & > li:hover > p {
+      transform: rotate(-6deg); /* Apply inverse rotation to the <p> element */
+    }
+  }
+}

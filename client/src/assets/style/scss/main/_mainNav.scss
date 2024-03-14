@@ -1,0 +1,45 @@
+#MainNav {
+  width: 99vw;
+  margin: 0 auto;
+  height: 13vh;
+  border-bottom: 2px solid #314758;
+  display: grid;
+
+  & > ul {
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1.5fr 4.5fr 1.5fr;
+    & > :nth-child(1) {
+      display: grid;
+
+      & > figure {
+        justify-self: center;
+        align-self: center;
+
+        & > img {
+          width: 15vw;
+        }
+      }
+    }
+    & > :nth-child(2) {
+      display: grid;
+
+      & > p {
+        justify-self: flex-end;
+        align-self: center;
+        // width: 40%;
+        font-size: 1.8rem;
+      }
+    }
+    & > :nth-child(3) {
+      display: grid;
+
+      & > a {
+        justify-self: center;
+        align-self: center;
+        // width: 40%;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

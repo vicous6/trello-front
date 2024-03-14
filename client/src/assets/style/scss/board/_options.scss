@@ -1,0 +1,17 @@
+.options {
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+}
+
+.options-title {
+  font-size: 20px;
+}
+
+.options-selection {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}

@@ -1,0 +1,21 @@
+.list {
+  background-color: #366968;
+  border-radius: 30px;
+  width: 300px;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.title {
+  color: #f3f7f8;
+  padding: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
