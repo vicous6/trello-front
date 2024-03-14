@@ -436,7 +436,7 @@ app.post("/getListsByBoardId", (req, res) => {
 app.post("/create-card", (req, res) => {
   let name = req.body.name;
   let desc = req.body.desc;
-  let idList = req.body.idList
+  let idList = req.body.idList;
 
   const endpoint = `cards?name=${name}&desc=${desc}&idList=${idList}&key=${apiKey}&token=${req.body.token}`;
 

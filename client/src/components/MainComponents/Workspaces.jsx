@@ -41,6 +41,7 @@ function MainWorkspaces({ setBoards, setCurrentWorkspaceId }) {
           requestOptions
         );
         const data = await response.json();
+        console.log(data);
         setWorkspaces(data);
         setCurrentWorkspaceId(data[1].id);
         initCaroussel();
