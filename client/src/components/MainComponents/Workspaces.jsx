@@ -44,8 +44,9 @@ function MainWorkspaces({ setBoards, setCurrentWorkspaceId }) {
         console.log(data);
         setWorkspaces(data);
         setCurrentWorkspaceId(data[1].id);
-        initCaroussel();
+
         fetchBoards(document.getElementById("workspacesList").children[1].id);
+        initCaroussel();
         // console.log(workspaces);
       } catch (error) {
         console.error(error);
