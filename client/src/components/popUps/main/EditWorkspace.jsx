@@ -21,7 +21,7 @@ function EditWorkspace({ setPopUpEditWorkspace, id, text }) {
         };
 
         const response = await fetch(
-          "http://localhost:3000/update-workspace",
+          "https://trello-brack.onrender.com/update-workspace",
           requestOptions
         );
 
