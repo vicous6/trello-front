@@ -187,7 +187,7 @@ function MainWorkspaces({ setBoards, setCurrentWorkspaceId }) {
       };
 
       const response = await fetch(
-        "http://localhost:3000/getBoardsByOrganisationId",
+        "https://trello-brack.onrender.com/getBoardsByOrganisationId",
         requestOptions
       );
       const data = await response.json();
