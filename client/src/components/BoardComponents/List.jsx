@@ -59,7 +59,7 @@ function List({ name, id, fetchLists }) {
         };
 
         const response = await fetch(
-          "http://localhost:3000/update-list",
+          "https://trello-brack.onrender.com/update-list",
           requestOptions
         );
 
