@@ -37,7 +37,7 @@ function MainWorkspaces({ setBoards, setCurrentWorkspaceId }) {
         };
 
         const response = await fetch(
-          "https://trello-brack.onrender.com:10000/workspaces",
+          "http://trello-brack.onrender.com:10000/workspaces",
           requestOptions
         );
         const data = await response.json();
