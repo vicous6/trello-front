@@ -56,7 +56,7 @@ function CreateBoard({ setPopUpCreateBoard, currentWorkspaceId }) {
           };
 
           const response = await fetch(
-            "http://localhost:3000/create-board-template",
+            "https://trello-brack.onrender.com/create-board-template",
             requestOptions
           );
 
