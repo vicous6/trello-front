@@ -18,7 +18,7 @@ function CreateWorkspace({ setPopUpCreateWorkspace }) {
         };
 
         const response = await fetch(
-          "http://localhost:3000/create-workspaces",
+          "https://trello-brack.onrender.com/create-workspaces",
           requestOptions
         );
 
