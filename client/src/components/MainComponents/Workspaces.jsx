@@ -18,11 +18,10 @@ function MainWorkspaces({ setBoards, setCurrentWorkspaceId }) {
       ) {
         token = localStorage.getItem("token");
       } else {
-        console.log("caca");
         token = window.location.href.split("=")[1];
         localStorage.setItem("token", token);
       }
-      console.log(token);
+      // console.log(token);
 
       try {
         const requestOptions = {
@@ -103,7 +102,7 @@ function MainWorkspaces({ setBoards, setCurrentWorkspaceId }) {
         workspaces[rightPosition].classList.remove("right");
         workspaces[rightPosition].classList.add("center");
 
-        console.log(currentBoard);
+        // console.log(currentBoard);
         workspaces[currentBoard].classList.remove("center");
         workspaces[currentBoard].classList.add("left");
 
@@ -113,14 +112,14 @@ function MainWorkspaces({ setBoards, setCurrentWorkspaceId }) {
         setCurrentBoard(
           (currentBoard + 1 + workspaces.length) % workspaces.length
         );
-        console.log();
-        console.log(currentBoard);
+        // console.log();
+        // console.log(currentBoard);
         fetchBoards(
           workspaces[(currentBoard + 1 + workspaces.length) % workspaces.length]
             .id
         );
         setCurrentWorkspaceId(workspaces[rightPosition].id);
-        console.log(workspaces[rightPosition].id);
+        // console.log(workspaces[rightPosition].id);
         console.log("Retardée d'une seconde.");
       }, 500);
     } else if (direction === "left") {
